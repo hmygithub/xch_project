@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	body{
+	color:#666;
+	margin:0;
+	padding:0;
+	font:12px "microsoft yahei", Arial, Helvetica, sans-serif;
+	background:#fff;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	border:none;
+	list-style:none;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:bottom;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff0700;
+	text-decoration:underline;
+}
+#top,#main{
+	width:1350px;
+	margin:0 auto;
+}
+#top{
+	height:60px;
+	margin:10px 85px;
+}
+#top ul li{float:left;padding-left:10px;margin:22px 0;}/**/
+#top ul li a {color:#0066CC;}
+#top ul li:first-child{border-right:1px solid #ddd; padding-right:10px;}
+#main{min-height:450px;}
+#main>div.lf{
+	margin-left:170px;
+}
+#main>div.lf>ul:first-child li {
+	float:left;
+}
+#main>div.lf li ul{margin-right:12px;}
+#main>div.lf li a{color:#DDDDDD}
+#main>div.lf>ul>li:first-child ul{color:#ACD253;}
+#main>div.lf>ul ul{
+	height:15px;
+	line-height:15px;
+}
+#main>div.lf li li:first-child{
+	width:200px;height:5px;
+	background:#DDDDDD;
+	border-radius:2px;
+}
+#main>div.lf li:first-child li:first-child{
+	background:#ACD253;
+}
+#main>div.lf li .circle{
+	width:15px;height:15px;
+	line-height:15px;
+	background:#DDD;
+	border-radius:50%;
+}
+#main>div.lf li:first-child .circle{
+	background:#ACD253;
+}
+/**会员注册**/
+#main>div.lf:first-child p span{color:#666460;}
+#main>div.lf:first-child p b:nth-child(1){
+	font-size:20px;color:#343535;
+	font-weight:500;
+	padding-right:10px;
+}
+#main>div.lf:first-child p b:nth-child(2){
+	font-size:14px;color:#47A224;
+}
+#main>div.lf:first-child p b:nth-child(3){
+	font-size:14px;color:#FF5800;
+}
+/**txt文本框**/
+#main>div.lf>ul.d1{margin-top:40px;}
+#main>div.lf>ul.d1 span:first-child:not(.s2){
+	float:left;clear:both;
+	display:block;
+	width:95px;
+	height:33px;
+	line-height:33px;
+	text-align:right;
+	margin-right:5px;
+	font-size:14px;
+}
+#main>div.lf>ul.d1 span.s2{
+	float:left;
+	color:#666460;
+}
+#main>div.lf>ul.d1 li>span.r1{
+	padding-left:5px;
+	float:left;
+	height:33px;
+	line-height:33px;
+	font-size:14px;
+}
+#main>div.lf>ul.d1 li>span.r1>b{
+	color:#47A224;
+}
+#main>div.lf>ul.d1 input:not(#c1){
+	float:left;
+	width:222px;
+	height:33px;
+	margin-bottom:20px;
+}
+#main>div.lf>ul.d1 #c1{
+	float:left;
+	margin-bottom:20px;
+}
+#main>div.lf>ul.d1 button{
+	float:left;
+	width:220px;
+	height:40px;
+	border:1px solid #E77C00;
+	border-radius:3px;
+	background:#FFB000;
+	color:#fff;font-size:14px;
+	margin-bottom:10px;
+}
+#main>div.lf>ul.d1 li:last-child a{float:left;color:#0066C7;}
+/**右边的框**/
+#main>div.rt{
+	width:250px;
+	height:290px;
+	border:5px solid #DEE6EE;
+	/*margin-left:20px;*/
+}
+#main>div.rt img{
+	margin:70px 0 0 90px;
+}
+#main>div.rt p{
+	font-size:16px;
+	color:#0066CC;
+	text-align:center;
+}
+/*footer文本*/
+	#footer{
+		width:1350px;min-height:60px;
+		margin-top:40px;
+		padding-left:255px;
+		box-sizing:border-box;
+	}
+	#footer ul li{
+		float:left;padding:0 5px;
+		padding-right:5px;
+		border-right:1px solid #00498E;
+		text-align:center;
+	}
+	#footer ul li:first-child{clear:both;}
+	#footer ul li:last-child{
+		border-right:0;
+	}
+	#footer ul li a{color:#00498E;}
+	#footer>p{padding-left:225px;}
+  </style>
+ </head>
+ <body>
+	<header id="top">
+		<a href="#">
+			<img src="Images/images/xch_logo.png" class="lf">
+		</a>
+		<ul class="rt">
+			<li><a href="#">登录</a></li>
+			<li><a href="#">客服中心</a></li>
+		</ul>
+	</header>
+	<section id="main">
+		<div class="lf">
+			<ul>
+				<li>
+					<ul>
+						<li></li>
+						<li class="circle"></li>
+						<li>填写</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li></li>
+						<li class="circle"></li>
+						<li>验证</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li></li>
+						<li class="circle"></li>
+						<li>注册成功</li>
+					</ul>
+				</li>
+			</ul>
+			<p>
+				<span><b>会员注册</b>注册成功可获<b>1000</b>积分&nbsp;+&nbsp;<b>返现</b>特权！</span>
+			<p>
+			<!--文本框-->
+			<ul class="d1">
+				<li>
+					<span>手机号</span>
+					<input type="text" placeholder="可用作登录名">
+				</li>
+				<li>
+					<span>Email</span>
+					<input type="text" placeholder="可用作登录名"><span class="r1">填写Email并通过验证,可额外获得<b>200</b>积分！</span>
+				</li>
+				<li>
+					<span>密码</span>
+					<input type="password" placeholder="8-20位字母、数字和符号">
+				</li>
+				<li>
+					<span>确认密码</span>
+					<input type="password" placeholder="再次输入密码">
+				</li>
+				<li>
+					<span>验证码</span>
+					<input type="text" placeholder="8-20位字母、数字和符号">
+				</li>
+				<li>
+					<span></span>
+					<input type="checkbox" id="c1" checked>
+					<span class="s2">同意<a href="#">《携程旅行网服务协议》</a>
+					</span>
+				</li>
+				<li>
+					<span></span>
+					<button><b>下一步,验证</b></button>
+				</li>
+				<li>
+					<span></span>
+					<a href="#">注册遇到问题？</a>
+				</li>
+			</ul>
+			</div>	
+		<div class="rt">
+			<img src="Images/登录/会员注册.png" alt="">
+			<p><a href="#">合作会员卡注册&gt;</a></p>
+		</div>
+	</section>
+	<footer id="footer">
+		<ul>
+		<li><a href="#">免费注册</a></li>
+		<li><a href="#">网站导航</a></li>
+		<li><a href="#">宾馆索引</a></li>
+		<li><a href="#">服务说明</a></li>
+		<li><a href="#">关于携程</a></li>
+		<li><a href="#">企业公民</a></li>
+		<li><a href="#">诚聘英才</a></li>
+		<li><a href="#">分销联盟</a></li>
+		<li><a href="#">企业礼品卡采购</a></li>
+		<li><a href="#">代理合作</a></li>
+		<li><a href="#">广告业务</a></li>
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">我要提建议</a></li>
+		</ul>
+		<br><p><a href="#">Copright@</a> 1999-2016,<a href="#">ctrip.com</a>.allrights reserved</p>
+	</footer>
+ </body>
+</html>

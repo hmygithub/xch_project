@@ -1,0 +1,39 @@
+
+function tabNav(num){
+	for(var i=1,len=document.getElementById("header").getElementsByTagName("li").length;i<=len;i++){
+		document.getElementById('cnt_'+i).style.visibility='hidden';
+	}
+	document.getElementById('cnt_'+num).style.visibility= 'visible';
+}
+/*function tabNav1(num){
+	for(var i=1,len=document.getElementById("top").getElementsByTagName("li").length;i<=len;i++){
+		document.getElementById('cnt_'+i).style.visibility='hidden';
+	}
+	document.getElementByTagName('cnt_'+num).style.css({"background","#3C83E5"});	
+}*/
+var myclick = function(v){  
+			var llis = document.getElementById("top").getElementsByTagName("li");  
+                for(var i = 0; i < llis.length; i++){  
+                    var lli = llis[i];  
+                    if(lli == document.getElementById("cnt_" + v)) {  
+                        lli.style.backgroundColor = "orange";
+						lli.childNodes.style.color="#fff";
+                    } else {  
+                        lli.style.background = "transparent";  
+                    }  
+                }  
+  
+                var divs = document.getElementsByClassName("tab_css");  
+                for(var i = 0; i < divs.length; i++) {  
+  
+                    var divv = divs[i];  
+  
+                    if(divv == document.getElementById("tab" + v + "_content")) {  
+                        divv.style.display = "block";  
+                    } else {  
+                        divv.style.display = "none";  
+                    }  
+                }  
+  
+            }  
+    

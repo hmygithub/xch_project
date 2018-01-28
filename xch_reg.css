@@ -1,0 +1,40 @@
+/*通用样式*/
+body{
+	color:#666;
+	margin:0;
+	padding:0;
+	font:12px "microsoft yahei", Arial, Helvetica, sans-serif;
+	background:#fff;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	border:none;
+	list-style:none;
+}
+
+.lf{float:left};
+.rt{float:right};
+.clear{clear:both};
+img{vertical-align:bottom};
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff0700;
+	text-decoration:underline;
+}
+#top,#main{
+	width:1350px;
+	margin:0 auto;
+}
+#top>a{display:block;}
+#top>div{
+	width:100%;
+	height:60px;
+	padding:0 85px;
+}
+#top ul{clear:left;}
+#top li{float:left;padding-left:10px;}
+#top li.first{border-right:1px solid #ddd; padding-right:10px;}

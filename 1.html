@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+   <title>Document</title>
+   <style>
+	img{
+	position:relative;
+  }
+  </style>
+	
+ </head>
+ <body>
+	<h1>请把鼠标移动到图片上</h1>
+	<img src="Images/当地玩乐/1.jpg" id="t1"/>
+  <span id="trail" style="visibility:hidden">HELLO</span>
+ 
+ <script type="text/javascript">
+ var arr=["1","2","3","4","5","6","7","8"];
+
+	t1.onmouseover=function cursor(){
+		e.preventDefault();
+		//trail.innerHTML="访问";
+		trail.style.visibility="visible";
+		trail.style.position="absolute";
+		trail.style.left=event.clientX+10;
+		trail.style.top=event.clientY;
+		trail.style.color="#e4393c";
+	}
+	t1.onmouseout=function hidecursor(){
+		trail.style.visibility="hidden";
+	}
+</script>
+</body>
+</html>

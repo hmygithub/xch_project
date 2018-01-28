@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ticket.css"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <style>
+        body {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        #head-u {
+            list-style: none;
+            padding-bottom: 10px;
+        }
+
+        #head-u > li {
+            float: left;
+        }
+
+        #head-u > li > a:hover {
+            color: #0065BB;
+        }
+
+        #adv {
+            margin: 10px 0;
+        }
+
+        #right div {
+            margin-top: 60px;
+        }
+
+        #right li span a {
+            color: #0065BB;
+            padding-left: 20px;
+        }
+
+        #right li b {
+            padding-right: 20px;
+        }
+
+        #right li p span {
+            padding-left: 80px;
+        }
+
+        #right li:nth-child(3) span {
+            display: inline-block;
+            width: 65px;
+            height: 22px;
+            line-height: 22px;
+            background: #6FD199;
+            color: #fff;
+            text-align: center;
+        }
+
+        #right li:nth-child(4) span b {
+            font-size: 20px;
+            color: #0065BB;
+        }
+
+        #right li:nth-child(4) span a {
+            color: #0065BB;
+        }
+
+        #right li:last-child > p b {
+            font-size: 2em;
+            color: #666;
+        }
+
+        #right li:last-child > p > span {
+            display: block;
+            text-align: right;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="header"></div>
+    <section id="main" class="clear">
+        <div class="bread-crumb">
+            <ul id="head-u">
+                <li><a href="#">门票&gt;</a></li>
+                <li><a href="#">上海景点门票&gt;</a></li>
+                <li><a href="#">上海景点门票&gt;</a></li>
+                <li><a href="#">上海迪士尼度假区门票&gt;</a></li>
+            </ul>
+        </div>
+
+        <div id="adv" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/ticket/1.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="Images/ticket/2.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="Images/ticket/3.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="Images/ticket/4.jpg"/>
+                </div>
+                <div class="item">
+                    <img src="Images/ticket/5.jpg"/>
+                </div>
+            </div>
+            <a href="#adv" class="carousel-control left" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#adv" class="carousel-control right" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <ul class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#adv"></li>
+                <li data-slide-to="3" data-target="#adv"></li>
+                <li data-slide-to="4" data-target="#adv"></li>
+                <li data-slide-to="1" data-target="#adv"></li>
+            </ul>
+        </div>
+
+        <div id="product_intro" class="lf">
+            <div id="preview">
+                <div id="mediumDiv">
+                    <img id="mImg" src="Images/ticket/02.jpg"/>
+
+                    <div id="mask"></div>
+                    <div id="superMask"></div>
+                </div>
+                <div id="largeDiv"></div>
+                <h1>
+                    <a class="backward_disabled"></a>
+                    <a class="forward"></a>
+                    <ul id="icon_list">
+                        <li><img src="Images/ticket/02-s.jpg"/></li>
+                        <li><img src="Images/ticket/01-s.jpg"/></li>
+                        <li><img src="Images/ticket/03-s.jpg"/></li>
+                        <li><img src="Images/ticket/04-s.jpg"/></li>
+                        <li><img src="Images/ticket/05-s.jpg"/></li>
+                        <li><img src="Images/ticket/06-s.jpg"/></li>
+                        <li><img src="Images/ticket/07-s.jpg"/></li>
+                        <li><img src="Images/ticket/08-s.jpg"/></li>
+                        <li><img src="Images/ticket/09-s.jpg"/></li>
+                        <li><img src="Images/ticket/10-s.jpg"/></li>
+                        <li><img src="Images/ticket/11-s.jpg"/></li>
+                        <li><img src="Images/ticket/12-s.jpg"/></li>
+                        <li><img src="Images/ticket/13-s.jpg"/></li>
+                        <li><img src="Images/ticket/14-s.jpg"/></li>
+                        <li><img src="Images/ticket/15-s.jpg"/></li>
+                        <li><img src="Images/ticket/16-s.jpg"/></li>
+                    </ul>
+                </h1>
+            </div>
+        </div>
+
+        <div id="right" class="lf">
+            <h1>上海迪士尼度假区</h1>
+
+            <div>
+                <ul>
+                    <li>
+				<span><b>景点地址</b>上海市浦东新区川沙新镇上海迪士尼度假景区
+				<a href="">查看地图</a></span>
+                    </li>
+                    <li>
+                        <p>
+                            <b>开放时间</b>2016年10月(除10/22,10/29每周周六)开放时间为：10:00-19:00。10/12，10/29每<br>
+				<span>周周六开放时间为：9:00-20:00。
+				2016年11月(除11/5,11/12/11/19,11/26)每周周六</span>
+                        </p>
+                    </li>
+                    <li><b>服务承诺</b><span>入园保证</span></li>
+                    <li>
+                        <p>
+                            <img src="Images/ticket/images/tr-045.png">
+				<span>
+					<b>4.6</b>/5分
+					<a href="#">查看8056条点评</a>
+				</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>“</b>
+                            十一期间人太多，一个项目等待时间两小时以上,土豪多，比香港迪士尼买东西的人多好多，入<br>园人员素质参差不齐，对禁烟标志视若无睹，园区内可以自带食物，这也导致地上东西非常非常多，亲<br>眼看到大人教小孩随地丢垃圾，哎。。。。。一天就玩了两个项目，看了一个旅行，还不错<br>
+                            <span>******244<b>”</b></span>
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<div class="container">
+    <div class="t1" style="height: auto">
+        <div id="navs">
+            <ul class="navs">
+                <li class="active">
+                    <a data-toggle="tab1" href="#tbl1">门票</a>
+                </li>
+                <li>
+                    <a data-toggle="tab2" href="#tbl2">玩乐</a>
+                </li>
+                <li><a data-toggle="tab3" href="#t-hotel">门票+酒店</a></li>
+                <li><a data-toggle="tab4" href="#nearby-hotel">附近酒店</a></li>
+            </ul>
+        </div>
+        <!--<div id="ticket">
+
+            <div id="aside-left" class="lf">
+                <ul>
+                    <li>成人票</li>
+                    <li>儿童票</li>
+                    <li>老人票</li>
+                </ul>
+            </div>-->
+        <div>
+            <table class="tab1 table table-responsive lf" id="tbl1" style="display: block">
+                <thead>
+                <tr>
+                    <td>名称</td>
+                    <td>提前预定时间</td>
+                    <td>市场价</td>
+                    <td>携程价</td>
+                    <td>支付方式</td>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>
+                    <td class="first">
+                        <span><b>[单票]</b><a href="#">上海迪士尼乐园成人票（送50元据点优惠券)>></a></span>
+                    </td>
+                    <td>
+                        <span>当天18:00之前</span>
+                    </td>
+                    <td>
+                        <span><s>￥370</s></span>
+                    </td>
+                    <td>
+                        <span><b>￥370</b>起</span>
+                    </td>
+                    <td>
+                    <span>
+                        <a href="#">在线支付</a>
+                        <a class="btn btn-warning">预订</a>
+                    </span>
+                    </td>
+                </tr>-->
+                </tbody>
+            </table>
+            <table class="tab2 table table-responsive lf" id="tbl2" style="display: none">
+                <thead>
+                <tr>
+                    <td>名称</td>
+                    <td>市场价</td>
+                    <td>携程价</td>
+                    <td>优惠</td>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr>
+                    <td class="first">
+                        <span><a href="#">【天天开班 提前3天预订立减20元】上海迪士尼乐园一日游（08:30上海出发）</a></span>
+                    </td>
+                    <td>
+                        <span><s>￥599</s></span>
+                    </td>
+                    <td>
+                        <span><b>￥389</b>起</span>
+                    </td>
+                    <td>
+                    <span>
+                        <a class="btn btn-info btn-xs">去看看</a>
+                    </span>
+                    </td>
+                </tr>-->
+                </tbody>
+            </table>
+            <div id="t-hotel" class="tab3" style="display: none">
+                <!--<div id="panel">
+                    <b>门票＋周边精选酒店套餐，方便又省钱</b>
+                    <a href="#" class="rt">更多&gt;&gt;</a>
+                </div>
+                <div class="media lf">
+                    <div class="media-left">
+                        <img src="Images/ticket/ticket+hotel/1.jpg" class="vertical-middle"/>
+                    </div>
+                    <div class="media-body">
+                        <p>
+                            <strong>上海柏斯特酒店1晚+上</strong><br/>
+                            <strong>海迪士尼乐园门票+...</strong><br/>
+                            10%旅客喜欢<br>
+                            酒店距离景点：<b>7.0</b>公里<br>
+                            <span>&yen;<b>1189</b>起/份</span>
+                        </p>
+                    </div>
+                </div>-->
+            </div>
+            <div id="nearby-hotel" class="tab4" style="display: none">
+                <!--<div id="panel2">
+                    <b>上海迪士尼度假区附近酒店</b>
+                </div>
+                <div class="media lf">
+                    <div class="media-left">
+                        <img src="Images/ticket/ticket+hotel/7.jpg" class="vertical-middle"/>
+                    </div>
+                    <div class="media-body">
+                            <h5>上海迪士尼乐园酒店</h5>
+                            <h5></h5>
+                            <p>
+                                点评：<b>4.6分</b>/1016人点评<br>
+                                距离：<b>0.7</b>公里<br>
+                                <span>&yen;<b>2035</b>起</span>
+                            </p>
+                    </div>
+                </div>
+            </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="mid">
+        <ul class="mid">
+            <li><a href="">预定须知</a></li>
+            <li><a href="">景点简介</a></li>
+            <li><a href="">交通指南</a></li>
+            <li><a href="">用户点评</a></li>
+            <!---->
+        </ul>
+    </div>
+
+    <div id="mid-content">
+        <a href="#" class="btn btn-warning">立刻预订</a>
+
+        <div id="around-view" class="">
+            <!--<h4 class="text-center">周边景点</h4>
+
+            <div class="thumbnail" style="padding-top: 15px">
+                <img src="Images/ticket/r1.jpg"/>
+                <div class="caption">
+                    <h6>上海国际旅游度假区生态园</h6>
+                    <span style="color: #FF6600">&yen;10起</span>
+                    <span class="rt" style="color: #999">距离1.3公里</span>
+                </div>
+            </div>-->
+            <!--<img src="Images/ticket/r4.jpg"/>-->
+            <!--<img src="Images/ticket/r5.jpg"/>-->
+            <!--style="margin: 25px 0 10px 0"-->
+        </div>
+        <div><img src="Images/ticket/images/order_need.jpg"/></div>
+        <p>
+            <b>优待政策</b><br/>
+            免票：婴幼儿身高1.0米及以下。<br/>
+            残障游客票：需要提供残障证明，请至景区窗口购票。<br/>
+            以上信息仅供参考，具体信息请以上海迪士尼乐园当天披露为准。<br/>
+        </p>
+
+        <p>
+            <b>预订限制</b><br/>
+            订单提交后无法更改证件信息，请在下单时务必确保证件信息填写正确。凭二代身份证（外籍客户凭护照）在闸机处取得纸质票，凭纸质票可在入园当日多次进出。纸质票遗失会造成进出障碍，二日票取票后纸质票作为唯一第二天的入园凭证，取票后的纸质票请妥善保管。
+            成人票：身高1.4米以上，65周岁以下。
+            老人票：65周岁及以上。如不符合老人票要求误订的客人请至迪士尼乐园景区补差价。
+            儿童票：身高1.0米以上至1.4米（包括1.4米）。建议儿童由16周岁或以上的成年游客代为购票，如使用儿童证件号码购票，可凭户口本等有效证件入园。如不符合儿童票要求误订的客人请至迪士尼乐园景区补差价。不满十六周岁的游客须由成人陪同入园。
+            上海迪士尼乐园的所有门票均为指定日票，即游客只能在购票时所选定的日期当天入园。针对某个具体入园日，每个订单最多可购买5张门票。同一订单内所有出行人须同时入园，不可分开出游，如不同时间入园，请提供不同证件号分批下单。
+            门票仅可在购票时所选定的使用日期凭身份证当天入园。入园遇到障碍时请致电携程客服。
+            该产品一经预订，不支持退票，在使用日期前3天20:00前可以免费改期2次，一张订单不支持部分改期。只能改至同等价位、相同类型日期超高峰日、高峰日、平日（超高峰日：暑期周末（7月、8月），国定节假日；高峰日：6/16-6/30，周末（周六、周日），暑期非周末（7月、8月）；平日：非高峰日。）的日期使用，修改日期跨度为提出改期申请日之后90天内。如需改期，请致电携程客服。改期需视上海迪士尼乐园当时的门票供应情况而定，不能保证改期一定成功，改期失败的客人请按原使用日期出行，过期作废。请合理安排出行时间，谨慎改期。凭二维码入园的门票不享受以上改期规则，敬请谅解。
+            未满十六周岁的未成年人必须在成年游客的陪同下方能入园游玩。
+            同一订单中不可同时预订一日票和两日票，如需预订两日票请单独下单。
+        </p>
+
+        <p>
+            <b>温馨提示</b><br/>
+            上海迪士尼度假区内的星愿公园和迪士尼小镇将向游客免费开放。观看位于迪士尼小镇内的华特迪士尼大剧院上演的百老汇音乐剧<a>《狮子王》</a> 需单独购票。
+            为保证顺利入园，请务必携带购票时登记的有效身份证件原件。（中国居民提供居民身份证，外国公民提供有效护照。）入园时，购票时登记的身份证件持有人本人必须在场，且需与同一订单上的所有同行游客一同入园。（举个例子：爸爸用他的身份证为一家三口买了票，入园当天，爸爸一定要在场，出示身份证验票后，带领其他两位家庭成员同时入园。）
+            您可以购买门票作为礼物赠送。购票时需要提供被赠者的有效身份证件信息。 【提醒】入园时，被赠票者需要携带购票时登记的身份证件原件。
+            为了能够正常预订，请保证携程APP已更新至V6.12及以上版本。
+            为使您的旅程圆满完成，并普及旅游安全知识及旅游文明公约，特制定<a>《携程旅游告游客注意事项》</a>，出行前，提醒您仔细阅读相关内容。同时，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。<a>查看详情</a>
+        </p>
+
+        <p>
+            <b>安全指南</b><br/>
+            旅游安全是旅游的生命线，为保障游客“住得安心、吃得放心、玩的舒心”，携程从出行常识、旅游活动和特殊人群三方面为您提供旅游安全指南。出行前，提醒您仔细阅读相关内容，重视旅游安全，使您的出游真正成为“快乐之游、难忘之游、收获之游”。
+            <a href="#">查看详情</a>
+        </p>
+        <img src="Images/ticket/images/order-play.jpg"/>
+
+        <div id="mid-content1">
+            <img src="Images/ticket/images/j_intro.jpg" id="j_intro"/>
+
+            <p id="p1">
+                <span class="btn-group-xs">
+                     <a href="#" class="btn btn-warning">特色1</a>
+                    中国大陆首座迪士尼度假区，一个特别为中国游客设计和打造的世界级家庭娱乐目的地。
+                </span><br/>
+                <span class="btn-group-xs">
+                     <a href="#" class="btn btn-warning">特色2</a>
+                   度假区内的主题乐园——上海迪士尼乐园，拥有包括全球最大的迪士尼城堡、第一个以海盗为主题的园区、最长的迪士尼花车巡游路线等多项“第一”。
+                </span><br/>
+                <span class="btn-group-xs">
+                     <a href="#" class="btn btn-warning">特色3</a>
+                    上海迪士尼乐园由六大主题园区组成，包括：“米奇大街”、“奇想花园”、“探险岛”、“明日世界”、“宝藏湾”及拥有“奇幻童话城堡”的“梦幻世界”。
+                </span>
+            </p>
+
+            <div>
+                <p>
+                    <b>上海迪士尼度假区</b>是一个特别为中国游客设计和打造的世界级家庭娱乐目的地。这里可供游客尽享多日休闲娱乐时光。整个度假区于2016年6月开幕，包括：
+                    一座主题乐园——适合所有人游玩、以神奇王国风格打造的“上海迪士尼乐园”，由六大主题园区组成，包括：“米奇大街”、“奇想花园”、“探险岛”、“明日世界”、“宝藏湾”及拥有“奇幻童话城堡”的“梦幻世界”。
+                    两座主题酒店——包括拥有420间客房、优雅别致的“上海迪士尼乐园酒店”以及拥有800间客房、充满童趣的“玩具总动员酒店”。
+                    <br/>
+                    一个国际级的购物餐饮娱乐区——“迪士尼小镇”，“华特迪士尼大剧院”将位于其中，上演全球首个普通话版本的百老汇热门音乐剧《狮子王》。
+                    <br/>
+                    一个由静谧的花园和波光粼粼的湖泊组成的休闲区——“星愿公园”，集美丽花园，惬意小道和波光粼粼的湖水于一身。
+                    <br/>
+                    <b>上海迪士尼乐园</b>于2016年6月盛大开幕，为所有年龄层的中国游客呈现令人流连忘返的神奇体验。您将可以探索一个前所未有的神奇世界，每个人都能在这里点亮心中奇梦。这就是上海迪士尼乐园，充满创造力、冒险精神与无穷精彩的快乐天地。您可在此游览全球最大的迪士尼城堡——奇幻童话城堡，探索别具一格又令人难忘的六大主题园区——米奇大街、奇想花园、梦幻世界、探险岛、宝藏湾和明日世界。
+                </p>
+                <img src="Images/ticket/intro-1.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-2.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>一、主题园区</b><br/>
+                    游客一进入上海迪士尼乐园入口便步入了“<b>米奇大街</b>”，它将是全球迪士尼乐园中第一个以米奇和他的伙伴们为主题的迎宾大道，米妮、唐老鸭、黛丝、高飞以及布鲁托等一众伙伴将在这里欢聚。这条缤纷多彩的大街分为四个街区，游客可以在这里与喜爱的迪士尼朋友热情拥抱、合影留念。在大街上五花八门的商铺中，“M大街购物廊”将提供乐园内最丰富的礼品和纪念品选择。
+                </p>
+                <img src="Images/ticket/intro-3.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/theme.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>"奇想花园"</b>赞颂大自然的奇妙和想象力带来的快乐，其七片神奇小花园让游客忘却尘嚣，或驾着“幻想曲旋转木马”回旋在欢乐中、或乘着“小飞象”翱翔天空、或观赏园区里多项标志性的迪士尼娱乐演出，例如城堡舞台秀和“点亮奇梦：夜光幻影秀”。游客还能从多个角度欣赏路线最长的迪士尼主题花车巡游——“米奇童话专列”，欣赏彩衣舞者伴着美妙的旋律演绎迪士尼的故事。
+                </p>
+                <img src="Images/ticket/intro-5.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-4.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>“梦幻世界”</b>的创造灵感来自于迪士尼的动画电影。它将是乐园中最大的园区，也是宏伟壮丽的“奇幻童话城堡”所在之处。在这个如童话般的仙境中，“晶彩奇航”带着游客蜿蜒漂流过一个个熟悉的迪士尼故事；“七个小矮人矿山车”在闪耀着钻石光芒的矿洞隧道中欢腾地穿梭；“小飞侠天空奇遇”坐着飞船横越伦敦的天空；游客还可以伴着小熊维尼探索百亩森林，和爱丽丝一起在梦游仙境迷宫中穿行。
+                </p>
+                <img src="Images/ticket/intro-00.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-000.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>“探险岛”</b>让游客们置身于新发现的远古部落中，探索神秘世界，发现深藏的宝藏。巍峨的雷鸣山将为探险岛之旅指出明确的方向。游客们或在“古迹探索营”走出自己的探险之路，或在“翱翔飞越地平线”里横跨世界和时空，抑或是坐上“雷鸣山漂流”的筏艇深入探险岛腹地，探索一只庞大神秘巨兽所在的黑暗领域。
+                </p>
+                <img src="Images/ticket/intro-7.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-8.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>“宝藏湾”</b>是全球迪士尼乐园首个以海盗为主题的园区，让游客可以参与到杰克船长和戴维·琼斯船长的冒险中。“加勒比海盗——沉落宝藏之战”利用尖端的机器人、动画、布景及多媒体技术将水载乘坐项目变为惊险刺激的大冒险。富探险精神的游客们还可以划着“探险家独木舟”游美丽海湾，踏上海盗船的甲板，在“巴波萨烧烤”大快朵颐。
+                </p>
+                <img src="Images/ticket/intro-9.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-10.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+
+                <p>
+                    <b>“明日世界”</b>充满了无尽可能并展现出未来最光明的愿景。迪士尼运用各类创新技术为这个园区带来全新面貌：新的星际探险项目“巴斯光年星际营救”带领游客们勇往直前、超越无限；“喷气背包飞行器”让人们突破重力束缚；
+                    “创极速光轮”包裹在巨大的半透明穹顶建筑下，幻化着不同光彩，吸引游客跨上两轮光轮摩托队列，挑战全球迪士尼乐园中最紧张刺激之一的过山车项目。游客们还能在“明日世界”旁体验到专为上海迪士尼乐园打造的互动体验——“星球大战远征基地”。
+                </p>
+                <img src="Images/ticket/intro-11.jpg" class="lf" style="margin:0 5px 20px 25px"/>
+                <img src="Images/ticket/intro-12.jpg" class="lf" style="margin:0 5px 20px 0 "/>
+            </div>
+        </div>
+        <div id="mid-content2">
+            <img src="Images/ticket/images/traffic-guide.jpg" id="traffic-guide"/>
+            <b>交通信息</b><br/>
+
+            <p>
+                地铁：搭乘上海地铁11号线前往目的地迪士尼站——距离上海迪士尼乐园、迪士尼小镇及星愿公园仅数步之遥。
+                公交车：可乘坐公交车前往上海迪士尼度假区，免去了开车寻路和停车找车位这些烦恼。
+                私家车：驱车前往上海迪士尼度假区，白天可把车停放在位置优越的停车场，距离上海迪士尼乐园、迪士尼小镇和度假区内的酒店仅举步之遥。
+                出租车：便捷的出租车，能将您送往坐落于上海迪士尼度假区中心地区的交通枢纽。从交通枢纽出发，即可步行前往上海迪士尼乐园、迪士尼小镇及星愿公园。
+            </p>
+        </div>
+        <div id="mid-content3">
+            <!-- <img src="Images/ticket/images/user-reviws.jpg" id="user-reviws"/>
+            <p class="first">
+                <span><b>4.6</b>/5分(共8369人点评)</span>
+            </p>
+           <p class="last">
+                <span><b>还是蛮灵的</b><img src="Images/ticket/tr-05.png" style="margin: 0 5px"/>5分</span><br/>
+                <span>还是蛮灵的啊 就是吃饭不咋地啊 玩得很好 以后有机会再带娃们过来玩一玩 小孩子会很喜欢</span><br/>
+                <span>*******839 <b>2016-10-30 21:20</b></span>
+            </p>-->
+
+        </div>
+        <ol class="pagers">
+            <!--<li><a href="#">1</a></li>
+             <li><a href="#">2</a></li>
+             <li class="active"><a href="#">3</a></li>
+             <li><a href="#">4</a></li>
+             <li><a href="#">5</a></li>-->
+        </ol>
+    </div>
+
+</div>
+
+<div id="footer">
+</div>
+<!--<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js"
+    })();
+</script>-->
+<script src="js/jquery-1.11.3.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/xch_ticket.js"></script>
+</body>
+</html>

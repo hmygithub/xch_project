@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body{
+	/*color:#666;*/
+	margin:0;
+	padding:0;
+	font:12px "microsoft yahei", Arial, Helvetica, sans-serif;
+	background:#fff;
+}
+	a{
+	color:#666;
+	text-decoration:none;
+	}
+	a:hover{
+	color:#ff0700;
+	text-decoration:underline;
+   }
+   ul{list-style:none;}
+	
+	#top{width:1350px;height:80px;margin:10px 0 15px 245px;}
+	#main{
+		width:950px;height:510px;
+		border-bottom:2px dashed #AFD0F1;
+		margin:0 200px;padding:0 45px;
+		box-sizing:border-box;
+	}
+	#main>img{float:left;margin-bottom:45px;}
+	#main>div{
+		float:left;width:390px;height:430px;border:2px solid #AFD0F1;
+		margin:15px 0 60px 45px;
+	}
+	#main>div>span{
+		display:block;
+		width:336px;
+		height:45px;
+		line-height:45px;
+		border-bottom:1px solid #D8E8F8;
+		margin:0 27px;
+	}
+	#main>div>span>b{
+		font-weight:normal;font-size:16px;
+		padding-right:36px;
+	}
+	#main>div>.first input:first-child{margin-left:105px;}
+	#main>div>.middle input{
+		width:190px;
+		height:30px;
+		line-height:30px;
+	}
+	#main>div>.middle span{
+		margin-left:55px;
+		padding-right:5px;
+		font-size:14px;
+	}
+	#main>div>.middle a{padding-left:5px;color:#00498E;}
+	#main>div>.last{font-size:14px;padding-left:105px;}
+	#main>div>button{
+		width:190px;height:34px;
+		border:1px solid #E77C00;
+		border-radius:3px;
+		background:#FFB000;
+		color:#fff;font-size:14px;
+		margin-left:105px;
+	}
+	#main>div>div{
+		height:155px;
+		margin-top:20px;
+		background:#FFFBF5;
+		
+	}
+	#main>div>div ul:first-child{}
+	#main>div>div ul:first-child li{
+		float:left;
+		width:100px;height:25px;line-height:25px;
+		border:1px solid #FF9001;
+		border-radius:3px;
+		background:#fff;
+		margin:20px 12px 20px 0;
+		text-align:center;
+	}
+	#main>div>div ul:first-child li:last-child{margin-right:0;}
+	#main>div>div ul:first-child li a{color:#FF9001;}
+	#main>div>div ul:last-child {clear:left;}
+	#main>div>div ul:last-child li{
+		float:left;
+		width:70px;height:20px;line-height:20px;
+		margin:0px 10px 5px 0;
+		text-align:left;
+	}
+	#main>div>div ul:last-child li img{vertical-align:middle;}
+	/*footer文本*/
+	#footer{
+		width:1350px;min-height:60px;
+		margin-top:20px;
+		padding-left:255px;
+		box-sizing:border-box;
+		
+	}
+	#footer ul li{
+		float:left;padding:0 5px;
+		padding-right:5px;
+		border-right:1px solid #00498E;
+		text-align:center;
+	}
+	#footer ul li:last-child{
+		border-right:0;
+	}
+	#footer ul li a{color:#00498E;}
+	#footer>p{padding-left:225px;}
+  </style>
+ </head>
+ <body>
+  <header id="top">
+	<img src="Images/images/xch_logo.png">
+  </header>
+  <section id="main">
+	<img src="Images/登录/login_logo.png">
+	<div>
+		<span><b>会员登录</b>立即注册，想积分换礼、返现等专属优惠！</span>
+		<p class="first">
+			<input type="radio" name="login" value="p_login" checked id="uname">普通登录
+			<input type="radio" name="login" value="t_login" id="upwd">手机动态密码登录
+		</p>
+		<p class="middle"><span>登录名</span>
+			<input type="text" placeholder="用户名/卡号/手机/邮箱">
+		</p>
+		<p class="middle"><span>密&nbsp;&nbsp;&nbsp;码</span>
+			<input type="password"><a href="">忘记密码?</a>
+		</p>
+		<p class="last">
+			<input type="checkbox" checked>30天内自动登录
+		</p>
+		<button><b>登&nbsp;录</b></button>
+		<div>
+			<ul>
+				<li><a href="#">合作卡登录</a></li>
+				<li><a href="#">公司客户登录</a></li>
+				<li><a href="#">福利平台登录</a></li>
+			</ul>
+			<ul>
+				<p>您还可以使用以下方式登录:<p>
+				<li><a href="#"><img src="Images/登录/支付宝.png" alt="">支付宝</a></li>
+				<li><a href="#"><img src="Images/登录/QQ.png" alt="">QQ</a></li>
+				<li><a href="#"><img src="Images/登录/baidu.png" alt="">百度</a></li>
+				<li><a href="#"><img src="Images/登录/xinlang.png" alt="">新浪微博</a></li>
+				<li><a href="#"><img src="Images/登录/weixin.png" alt="">微信</a></li>
+				<li><a href="#"><img src="Images/登录/wangyi.png" alt="">网易</a></li>
+				<li><a href="#"><img src="Images/登录/人人.png" alt="">人人网</a></li>
+			<ul>
+		</div>
+	</div>
+	
+ </section>
+ <footer id="footer">
+	<ul>
+		<li><a href="#">免费注册</a></li>
+		<li><a href="#">网站导航</a></li>
+		<li><a href="#">宾馆索引</a></li>
+		<li><a href="#">服务说明</a></li>
+		<li><a href="#">关于携程</a></li>
+		<li><a href="#">企业公民</a></li>
+		<li><a href="#">诚聘英才</a></li>
+		<li><a href="#">分销联盟</a></li>
+		<li><a href="#">企业礼品卡采购</a></li>
+		<li><a href="#">代理合作</a></li>
+		<li><a href="#">广告业务</a></li>
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">我要提建议</a></li>
+		
+	</ul>
+	<br><p><a href="#">Copright@</a> 1999-2016,<a href="#">ctrip.com</a>.allrights reserved</p>
+ </footer>
+
+ </body>
+</html>
